@@ -38,7 +38,7 @@ const Index = ({ data, location }) => {
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe
                   class="embed-responsive-item"
-                  src={require('../pages/videos/svideo.mp4')}
+                  src={require('../pages/videos/svideo1.mp4')}
                   allowfullscreen
                 />
               </div>
