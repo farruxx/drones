@@ -7,82 +7,122 @@ import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Form from 'components/Form'
 import i18n from '../util/i18n'
-import './style.scss'
-const Index = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
-  return (
-    <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
-      <body>
-        <div className="container center-kl">
-          <section>
-            <p>{i18n.title}</p>
-            <button className="btn btn-primary">Заказать сейчас</button>
-
-            <h1 className="head">{i18n.decription1}</h1>
-
-            <div className="col-md-10 img">
-              <img src={require('../pages/images/s1.jpg')} />
-              <p>{i18n.text0}</p>
-            </div>
-
-            <h4 />
-            <div className="col-md-10 img">
-              <img src={require('../pages/images/s4.jpg')} />
-              <p>{i18n.text1}</p>
-            </div>
-            <div className="col-md-10 img">
-              <img src={require('../pages/images/s3.jpg')} />
-            </div>
-            <div className="col-md-10 img">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                  class="embed-responsive-item"
-                  src={require('../pages/videos/svideo1.mp4')}
-                  allowfullscreen
-                />
-              </div>
-            </div>
-            <div className="col-md-10" style={{ marginTop: 50 }}>
-              <form>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1">
-                    Check me out
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                  Submit
+import './scripp/script.js'
+import '../scss/style.scss'
+class Index extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+  render() {
+    var { data, location } = this.props
+    const posts = get(data, 'remark.posts')
+    return (
+      <Layout location={location}>
+        <Meta site={get(data, 'site.meta')} />
+        <body>
+          <div className="container center-kl">
+            <section>
+              <div className="col-md-10 img">
+                <button className="btn btn-primary contract">
+                  {i18n.contract}
                 </button>
-              </form>
-            </div>
-          </section>
-        </div>
-      </body>
-    </Layout>
-  )
+                <h1 className="head">{i18n.decription1}</h1>
+                <img src={require('../pages/images/s1.jpg')} />
+                <p className="text0">{i18n.text0}</p>
+              </div>
+
+              <h4 />
+              <div className="col-md-10 img">
+                <img src={require('../pages/images/s4.jpg')} />
+                <p className="text1">{i18n.text1}</p>
+              </div>
+              <div className="col-md-10 img">
+                <img src={require('../pages/images/s5.jpg')} />
+              </div>
+              <div className="col-md-10 img">
+                <img src={require('../pages/images/s5.jpg')} />
+                <p className="text2">{i18n.text2}</p>
+              </div>
+              <div className="col-md-10 img">
+                <p className="rewiev">{i18n.rewiev}</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src={require('../pages/videos/svideo1.mp4')}
+                    allowfullscreen
+                  />
+                </div>
+                <p className="advantage">{i18n.advantage}</p>
+                <ul>
+                  <li>{i18n.adv1}</li>
+                  <li>{i18n.adv2}</li>
+                  <li>{i18n.adv3}</li>
+                  <li>{i18n.adv4}</li>
+                  <li>{i18n.adv5}</li>
+                  <li>{i18n.adv6}</li>
+                  <li>{i18n.adv7}</li>
+                  <li>{i18n.adv8}</li>
+                  <li>{i18n.adv9}</li>
+                </ul>
+              </div>
+              <div className="col-md-10">
+                <img src={require('./images/s2.jpg')} />
+              </div>
+              <div className="col-md-10">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="name"
+                  placeholder="Введите Имя"
+                  value={this.state.name}
+                  onChange={e => {
+                    this.setState({
+                      name: e.target.value,
+                    })
+                  }}
+                />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="phone"
+                  placeholder="Введите ваш телефон"
+                  value={this.state.phone}
+                  onChange={e => {
+                    this.setState({
+                      phone: e.target.value,
+                    })
+                  }}
+                />
+                <button
+                  className="form-button"
+                  onClick={() => {
+                    var body = 'HELLO' + this.state.name
+                    var body = 'phone' + this.state.phone
+                    fetch('https://summergroup.uz/.netlify/functions/hello', {
+                      body: body,
+                      method: 'POST',
+                    })
+                  }}
+                >
+                  <span className="text-button">Отправить заявку</span>
+                </button>
+
+                <footer>
+                  <div className="overlay js-overlay-thank-you">
+                    <div className="popup js-thank-you">
+                      <h2>спаибо за заявку</h2>
+                      <div className="close-popup js-close-thank-you" />
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </section>
+          </div>
+        </body>
+      </Layout>
+    )
+  }
 }
 
 export default Index

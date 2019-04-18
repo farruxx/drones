@@ -1,0 +1,103 @@
+
+section{
+    margin-left: 12px;
+}
+
+///стил для всех текстов ///
+.text0{
+    background-color:  #00aced;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #fff;
+    border-radius: 5px;
+}
+.text1{
+    background-color:  #00aced;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #fff;
+    font-family: Helvetica;
+    border-radius: 5px;
+}
+
+.text2{
+    color: #fff;
+    background-color:  #00aced;
+    font-size: 18px;
+    padding: 12px 20px;
+    font-family: Helvetica;
+    border-radius: 5px;
+}
+
+.rewiev{
+    font-size: 30px;
+    color: #00aced;
+}
+
+.advantage{
+    font-size: 23px;
+    padding: 12px 0px;
+    margin-bottom: 5px;
+    color: #00aced;
+
+}
+///стил для всех текстов ///
+
+///btn///
+.contract{
+    margin-left: 490px;
+    color: #fff;
+    background-color: #00aced;
+    border-color: #00aced;
+}
+.contract:hover{
+    background-color: #00aced;
+    border-color: #00aced;
+}
+.contract{
+    position: absolute;
+    outline: none !important;
+}
+
+///btn///
+
+
+///block-img////
+.img{
+    ul{
+        background-color:   #00aced;
+        border-radius: 5px;
+        padding: 12px 30px;
+        position: relative;
+        margin-top: -10px;
+
+        li{
+           color: #fff;
+           font-size: 18px;
+           font-family: Helvetica;
+        }
+    }
+}
+///block-img////
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .contract{
+        margin-left: 250px;
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:768px){
+    .contract{
+        margin-left:  100px;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:920px){
+
+}
+
+
+
