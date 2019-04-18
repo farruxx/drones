@@ -99,10 +99,13 @@ class Index extends React.Component {
                   onClick={() => {
                     var body = 'HELLO' + this.state.name
                     var body = 'phone' + this.state.phone
-                    fetch('https://summergroup.uz/.netlify/functions/hello', {
-                      body: body,
-                      method: 'POST',
-                    })
+                    fetch(
+                      'https://drones1.netlify.com/.netlify/functions/hello',
+                      {
+                        body: body,
+                        method: 'POST',
+                      }
+                    )
                   }}
                 >
                   <span className="text-button">Отправить заявку</span>
