@@ -70,7 +70,7 @@ class Index extends React.Component {
               <div className="col-md-10">
                 <img src={require('./images/s2.jpg')} />
               </div>
-              <Feedbacks />
+              {/* <Feedbacks /> */}
               <div className="col-md-10">
                 <input
                   type="text"
