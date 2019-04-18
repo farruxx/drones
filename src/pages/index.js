@@ -7,8 +7,7 @@ import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Form from 'components/Form'
 import i18n from '../util/i18n'
-// import Feedbacks from './Feedbacks'
-import './scripp/script.js'
+import Feedbacks from './Feedbacks'
 import '../scss/style.scss'
 class Index extends React.Component {
   constructor(props) {
@@ -70,7 +69,7 @@ class Index extends React.Component {
               <div className="col-md-10">
                 <img src={require('./images/s2.jpg')} />
               </div>
-              {/* <Feedbacks /> */}
+              <Feedbacks />
               <div className="col-md-10">
                 <input
                   type="text"
