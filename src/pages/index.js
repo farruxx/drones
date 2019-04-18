@@ -70,7 +70,23 @@ class Index extends React.Component {
                 <img src={require('./images/s2.jpg')} />
               </div>
               <Feedbacks />
-              <div className="col-md-10">
+              <div className="col-md-10 forms">
+                <table className="tab1">
+                  <tr>
+                    <th>Обычная цена</th>
+                  </tr>
+                  <tr>
+                    <th>570 000</th>
+                  </tr>
+                </table>
+                <table className="tab2">
+                  <tr>
+                    <th>Цена по акции</th>
+                  </tr>
+                  <tr>
+                    <th>490 000</th>
+                  </tr>
+                </table>
                 <input
                   type="text"
                   className="form-control"
@@ -96,7 +112,7 @@ class Index extends React.Component {
                   }}
                 />
                 <button
-                  className="form-button"
+                  className="form-button form-control"
                   onClick={() => {
                     var body = 'HELLO' + this.state.name
                     var body = 'phone' + this.state.phone
@@ -115,7 +131,7 @@ class Index extends React.Component {
                 <footer>
                   <div className="overlay js-overlay-thank-you">
                     <div className="popup js-thank-you">
-                      <h2>спаибо за заявку</h2>
+                      <h2>Cпаибо за заявку</h2>
                       <div className="close-popup js-close-thank-you" />
                     </div>
                   </div>
