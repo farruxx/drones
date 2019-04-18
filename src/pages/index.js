@@ -7,7 +7,7 @@ import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Form from 'components/Form'
 import i18n from '../util/i18n'
-import Feedbacks from './Feedbacks'
+// import Feedbacks from './Feedbacks'
 import './scripp/script.js'
 import '../scss/style.scss'
 class Index extends React.Component {
