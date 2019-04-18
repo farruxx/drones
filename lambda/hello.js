@@ -1,6 +1,6 @@
 const https = require('https')
 // For more info, check https://www.netlify.com/docs/functions/#javascript-lambda-functions
-export function handler(event, context, callback) {
+module.exports = function handler(event, context, callback) {
   // console.log("queryStringParameters", event.queryStringParameters)
   // callback(null, {
   //   // return null to show no errors
