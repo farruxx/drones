@@ -41,7 +41,7 @@ class Index extends React.Component {
                 <img src={require('../pages/images/s5.jpg')} />
               </div>
               <div className="col-md-10 img">
-                <img src={require('../pages/images/s5.jpg')} />
+                <img src={require('../pages/images/s7.jpg')} />
                 <p className="text2">{i18n.text2}</p>
               </div>
               <div className="col-md-10 img">

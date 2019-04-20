@@ -109,7 +109,7 @@ section{
 
      footer{
          h2{
-             margin-left: 102px;
+             text-align: center;
          }
      }
 
@@ -168,6 +168,12 @@ section{
    }
 }
 
+
+@media screen and (min-width:375px) and (max-width:812px){
+    .contract{
+        margin-left: 205px;
+    }
+}
 
 
 
