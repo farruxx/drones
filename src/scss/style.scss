@@ -81,7 +81,36 @@
 
 
 /// table ///
+  .wok{
+      p{
+          margin-left: 42px;
+          font-size: 18px;
+          font-family: Helvetica;
+          font-weight: 700;
+      }
+      span{
+          margin-left: 52px;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 2px;
+           
+      }
+  }
 
+  .wok1{
+      p{
+          font-size: 18px;
+          font-family: Helvetica;
+          font-weight: 700;
+      }
+      span{
+          margin-left: 10px;
+          line-height: 2px;
+          font-size: 30px;
+          font-family: Helvetica;
+          font-weight: 700;
+      }
+  }
 /// table ///
 
 
@@ -143,22 +172,46 @@
  }
 
 
- .fors{
-     
-   .tb{
-       
-       position: relative;
-   }
- }
+ 
+ 
 
 /// form ///
 
+.wok{
+    p{
+        margin-left: 42px;
+        font-size: 18px;
+        font-family: Helvetica;
+        font-weight: 700;
+    }
+    span{
+        margin-left: 52px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 2px;
+         
+    }
+}
+
+.wok1{
+    p{
+        font-size: 18px;
+        font-family: Helvetica;
+        font-weight: 700;
+    }
+    span{
+        margin-left: 10px;
+        line-height: 2px;
+        font-size: 30px;
+        font-family: Helvetica;
+        font-weight: 700;
+    }
+}
 
 
 
 
-
-@media (min-width:320px) and (max-width:568px){
+@media screen and (max-width:568px){
     
     .head{
         font-size: 20px;
@@ -192,20 +245,55 @@
        }
    }
 
-   .fors{
-    
-    
+   .wok{
+    width: 40%;
+    margin: auto;
+    background: silver;
+    overflow: hidden; /* clearfix */
     p{
-        margin-top: 12px;
-        font-size: 03vh;
-        .ispan{
-            padding: 0px 3px 0px 3px;
-            color: #00aced;
+        font-size: 15px;
+        text-align: center;
+        margin-left: -2px;;
+    }
+    span{
+        font-size: 18px;
+        margin-left: 12px;
+    }
+  }
+  
+  .wok:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+  }
 
-        }
-      }
-   }
+
+  .wok1{
+    width: 40%;
+    margin: auto;
+    background: silver;
+    overflow: hidden; /* clearfix */
+    p{
+        font-size: 15px;
+        text-align: center;
+        margin-left: -2px;;
+    }
+    span{
+        font-size: 18px;
+        margin-left: 12px;
+    }
+  }
+  
+  .wok1:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+  }
+  
 }
+
+
+
 
 
 

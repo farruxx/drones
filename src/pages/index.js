@@ -77,15 +77,16 @@ class Index extends React.Component {
                 <img src={require('./images/s2.jpg')} />
               </div>
               <Feedbacks />
-              <div className="col-md-10 corr">
-                <div className="col-md-6">
-                  <h1 className="head">{i18n.decription1}</h1>
-                </div>
-
-                <div className="col-md-12 coor">
-                  <button className="btn btn-primary contract">
-                    {i18n.contract}
-                  </button>
+              <div className="col-md-10">
+                <div class="row">
+                  <div class="col-md-8 col-hidden-xs-3  wok">
+                    <p>Обычная цена</p>
+                    <span>900 000</span>
+                  </div>
+                  <div class="col-md-4 col-hidden-xs-4   wok1">
+                    <p>Цена по акции</p>
+                    <span>800 000</span>
+                  </div>
                 </div>
               </div>
               <div className="col-md-10 forms">
