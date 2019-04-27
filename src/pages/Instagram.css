@@ -1,0 +1,28 @@
+.userImage{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+.userName{
+    color: black;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.postHead{
+    display: flex;
+    align-items: center;
+}
+
+.mainImage{
+    
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbarIcon{
+    padding: 7px;
+}
