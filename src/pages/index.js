@@ -23,11 +23,18 @@ class Index extends React.Component {
         <body>
           <div className="container center-kl">
             <section>
+              <div className="col-md-10 corr">
+                <div className="col-md-6">
+                  <h1 className="head">{i18n.decription1}</h1>
+                </div>
+
+                <div className="col-md-12 coor">
+                  <button className="btn btn-primary contract">
+                    {i18n.contract}
+                  </button>
+                </div>
+              </div>
               <div className="col-md-10 img">
-                <button className="btn btn-primary contract">
-                  {i18n.contract}
-                </button>
-                <h1 className="head">{i18n.decription1}</h1>
                 <img src={require('../pages/images/s1.jpg')} />
                 <p className="text0">{i18n.text0}</p>
               </div>
@@ -70,26 +77,18 @@ class Index extends React.Component {
                 <img src={require('./images/s2.jpg')} />
               </div>
               <Feedbacks />
+              <div className="col-md-10 corr">
+                <div className="col-md-6">
+                  <h1 className="head">{i18n.decription1}</h1>
+                </div>
+
+                <div className="col-md-12 coor">
+                  <button className="btn btn-primary contract">
+                    {i18n.contract}
+                  </button>
+                </div>
+              </div>
               <div className="col-md-10 forms">
-                <p>
-                  Заказать<span>Смарт Миксер</span>прямо сейчас
-                </p>
-                <table className="tab1">
-                  <tr>
-                    <th>Обычная цена</th>
-                  </tr>
-                  <tr>
-                    <th>570 000</th>
-                  </tr>
-                </table>
-                <table className="tab2">
-                  <tr>
-                    <th>Цена по акции</th>
-                  </tr>
-                  <tr>
-                    <th>490 000</th>
-                  </tr>
-                </table>
                 <input
                   type="text"
                   className="form-control"
@@ -134,7 +133,7 @@ class Index extends React.Component {
                 <footer>
                   <div className="overlay js-overlay-thank-you">
                     <div className="popup js-thank-you">
-                      <h2>Cпаибо за заявку</h2>
+                      <h2>Cпасибо</h2>
                       <div className="close-popup js-close-thank-you" />
                     </div>
                   </div>

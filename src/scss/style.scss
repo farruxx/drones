@@ -43,22 +43,46 @@
 ///стил для всех текстов ///
 
 ///btn///
-.contract{
-    margin-left: 490px;
-    color: #fff;
-    background-color: #00aced;
-    border-color: #00aced;
-}
-.contract:hover{
-    background-color: #00aced;
-    border-color: #00aced;
-}
-.contract{
-    position: absolute;
-    outline: none !important;
+
+.corr{
+    .head{
+    margin-bottom: -80px;;
+    }
+   .coor{
+        
+        margin-bottom: -10px;
+        .contract{
+            margin-top: -80px;
+            color: #fff;
+            background-color: #00aced;
+            border-color: #00aced;
+            margin: 40px auto;
+            margin-right: -17px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           
+        }
+        .contract:hover{
+            background-color: #00aced;
+            border-color: #00aced;
+        }
+    }
 }
 
+
+
+
 ///btn///
+
+
+
+
+/// table ///
+
+/// table ///
 
 
 ///block-img////
@@ -92,10 +116,7 @@
          height: 60px;
          box-shadow: 0px 0px 0px 0px;
      }
-     .tab2{
-         margin-left: 240px;
-         margin-top: -50px;
-     }
+     
 
      .form-button{
          background-color: #00aced;
@@ -110,11 +131,25 @@
          }
      }
 
-     p{
-       font-size: 18px;
+     
+
+     .forms-title{
+         span{
+             padding: 12px;
+             color: #00aced;
+             font-family: Trebuchet MS;
+         }
      }
  }
 
+
+ .fors{
+     
+   .tb{
+       
+       position: relative;
+   }
+ }
 
 /// form ///
 
@@ -123,12 +158,8 @@
 
 
 
-@media screen and (max-width:568px) and (min-width:568px){
-    .contract{
-        margin-left: 160px;
-        height: 30px;
-        padding: 2px 11px 0px 12px;
-    }
+@media (min-width:320px) and (max-width:568px){
+    
     .head{
         font-size: 20px;
     }
@@ -161,27 +192,29 @@
        }
    }
 
-   .forms{
-       .tab2{
-           font-size: 15px;;
-       }
+   .fors{
+    
+    
+    p{
+        margin-top: 12px;
+        font-size: 03vh;
+        .ispan{
+            padding: 0px 3px 0px 3px;
+            color: #00aced;
+
+        }
+      }
    }
 }
 
 
-@media screen and (max-width:812px) and (min-width:314px){
-    .contract{
-        margin-left: 255px;
-    }
-}
 
 
 
 
-@media screen and (min-width:414px) and (max-width:768px){
-    .contract{
-        margin-left:  253px;
-    }
+
+@media (min-width:569px) and (max-width:768px){
+    
     .forms{
         .tab2{
             font-size: 15px;
@@ -191,8 +224,29 @@
 }
 
 
-@media screen and (min-width:769px) and (max-width:920px){
-
+@media (min-width:769px) and (max-width:920px){
+    .coor{
+        
+        margin-bottom: -10px;
+        .contract{
+            margin-top: -80px;
+            color: #fff;
+            background-color: #00aced;
+            border-color: #00aced;
+            margin: 40px auto;
+            margin-right: -17px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           
+        }
+        .contract:hover{
+            background-color: #00aced;
+            border-color: #00aced;
+        }
+    }
 }
 
 
