@@ -41,7 +41,7 @@ class Index extends React.Component {
                 <img src={require('../pages/images/s5.jpg')} />
               </div>
               <div className="col-md-10 img">
-                <img src={require('../pages/images/s5.jpg')} />
+                <img src={require('../pages/images/s7.jpg')} />
                 <p className="text2">{i18n.text2}</p>
               </div>
               <div className="col-md-10 img">
@@ -71,6 +71,9 @@ class Index extends React.Component {
               </div>
               <Feedbacks />
               <div className="col-md-10 forms">
+                <p>
+                  Заказать<span>Смарт Миксер</span>прямо сейчас
+                </p>
                 <table className="tab1">
                   <tr>
                     <th>Обычная цена</th>
@@ -91,7 +94,7 @@ class Index extends React.Component {
                   type="text"
                   className="form-control"
                   name="name"
-                  placeholder="Введите Имя"
+                  placeholder="Введите Ф.И.O"
                   value={this.state.name}
                   onChange={e => {
                     this.setState({
@@ -103,7 +106,7 @@ class Index extends React.Component {
                   type="text"
                   className="form-control"
                   name="phone"
-                  placeholder="Введите ваш телефон"
+                  placeholder="Введите телефон"
                   value={this.state.phone}
                   onChange={e => {
                     this.setState({
@@ -125,7 +128,7 @@ class Index extends React.Component {
                     )
                   }}
                 >
-                  <span className="text-button">Отправить заявку</span>
+                  <span className="text-button">Заказать сейчас</span>
                 </button>
 
                 <footer>

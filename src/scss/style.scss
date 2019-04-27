@@ -1,7 +1,5 @@
 
-section{
-    margin-left: 22px;
-}
+
 
 ///стил для всех текстов ///
 .text0{
@@ -89,24 +87,32 @@ section{
       padding-top: 12px;
       border-radius: 5px;
      input{
-         margin-bottom: 12px;
+         margin-bottom: 20px;
          font-size: 17px;
-         
-         background: #f2f2f2;
+         height: 60px;
+         box-shadow: 0px 0px 0px 0px;
      }
-
-     
-
      .tab2{
-         margin-left: 171px;
+         margin-left: 240px;
          margin-top: -50px;
      }
 
      .form-button{
          background-color: #00aced;
          color:#fff;
+         height: 70px;
+         font-size: 20px;
      }
 
+     footer{
+         h2{
+             text-align: center;
+         }
+     }
+
+     p{
+       font-size: 18px;
+     }
  }
 
 
@@ -117,7 +123,7 @@ section{
 
 
 
-@media screen and (min-width:320px) and (max-width:568px){
+@media screen and (max-width:568px) and (min-width:568px){
     .contract{
         margin-left: 160px;
         height: 30px;
@@ -128,29 +134,29 @@ section{
     }
 
     .rewiev{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .advantage{
-        font-size: 20px;;
+        font-size: 24px;;
     }
 
     .text0{
-        font-size: 16px;;
+        font-size: 18px;;
     }
 
     .text1{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .text2{
-        font-size: 16px;;
+        font-size: 18px;;
     }
 
    .img{
        ul{
         li{
-            font-size: 16px;
+            font-size: 18px;
         }
        }
    }
@@ -163,12 +169,18 @@ section{
 }
 
 
+@media screen and (max-width:812px) and (min-width:314px){
+    .contract{
+        margin-left: 255px;
+    }
+}
+
 
 
 
 @media screen and (min-width:414px) and (max-width:768px){
     .contract{
-        margin-left:  243px;
+        margin-left:  253px;
     }
     .forms{
         .tab2{
