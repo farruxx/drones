@@ -78,12 +78,12 @@ class Index extends React.Component {
               </div>
               <Feedbacks />
               <div className="col-md-10">
-                <div class="row">
-                  <div class="col-md-8 col-hidden-xs-3  wok">
+                <div className="price">
+                  <div class="col-md-8 col-hidden-xs-3 ">
                     <p>Обычная цена</p>
                     <span>900 000</span>
                   </div>
-                  <div class="col-md-4 col-hidden-xs-4   wok1">
+                  <div class="col-md-4 col-hidden-xs-4  ">
                     <p>Цена по акции</p>
                     <span>800 000</span>
                   </div>
